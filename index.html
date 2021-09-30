@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Práctica Json</title>
+
+            <link rel="stylesheet" href="styles.css">
+
+        </head>
+
+        <body>
+            
+            <header class="header">
+
+                <div class="header_div">
+
+                    <h1 class="header_h1">Los Simpsons</h1>
+
+                </div>
+
+            </header>
+
+            <main>
+
+                <article class="article">
+
+                    <div class="article_img"></div>
+
+                    <section class="section1">
+
+                        <div class="section1_div1"><h1 class="section1_h1">Archivo JSON</h1></div>
+                        <div class="section1_div2" id="archivoJSON"></div>
+
+                    </section>
+
+                    <section class="section2">
+
+                        <div class="section2_div1"><h1 class="section1_h1">Tabla Personajes</h1></div>
+
+                        <table class="section2_table1" id="tablaDatos"> 
+
+                            <tbody class="section2_tbody">
+
+                                <tr class="section2_tr">Nombre</tr>
+                                <tr class="section2_tr">Cantidad de Parientes</tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <button class="button" id="botonCargar" onclick="cargarDatos()">Cargar Personajes</button>
+
+                    </section>
+
+                    <section class="section3">
+
+                        <div class="section2_div1"><h1 class="section1_h1">Ejercicios de Búsqueda</h1></div>
+
+                        <div class="section3_div1"><p>Ingrese el nombre del personaje que desea buscar:</p></div>
+
+                        <input class="section3_input1" type="text" name="" id="nombrePersonaje">
+
+                        <button class="button" id="botonPersonaje" onclick="cargarPersonaje()">Cargar Personaje</button>
+
+                        <div class="section3_div2" id="informacionPersonaje"></div>
+
+                    </section>
+
+                    <section class="section3">
+
+                        <div class="section3_div1"><p>Ingrese el color de cabello del personaje que desea buscar:</p></div>
+
+                        <input class="section3_input1" type="text" name="" id="colorCabello">
+
+                        <button class="button" id="botonCabello" onclick="cargarCabello()">Cargar Personaje</button>
+                        
+                        <div class="section3_div2" id="informacionCabello"></div>
+
+                    </section>
+
+                </article>
+
+            </main>
+
+            <footer class="footer">
+
+                <div class="footer_div1">Todos los derechos reservados.</div>
+                <div class="footer_div2">Política de Privacidad</div>
+
+            </footer>
+
+            <script src="/scripts.js"></script>
+
+        </body>
+
+    </html>
